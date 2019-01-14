@@ -1,0 +1,18 @@
+[package]
+name = "rust-fuse-backblaze"
+version = "0.1.0"
+authors = ["Daniel Wanner <daniel.wanner@tubber.xyz>"]
+edition = "2018"
+
+[[bin]]
+path = "src/main.rs"
+name = "mount-bblz"
+
+[dependencies]
+clap = "*"
+fuse = "*"
+reqwest = "*"
+tokio = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
